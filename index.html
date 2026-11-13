@@ -66,6 +66,8 @@ main{min-width:0}
 @media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
 .eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mark);display:flex;flex-wrap:wrap;gap:6px 14px}
 .eyebrow .src{color:var(--muted)}
+.byline{margin:0 0 22px;max-width:56ch;font-size:16.5px;line-height:1.45;font-weight:500;color:var(--ink)}
+.byline .byline-l{display:block;margin-bottom:6px;font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 h1{font-size:clamp(40px,6.6vw,84px);line-height:.96;font-weight:800;margin-top:18px;letter-spacing:-.03em}
 h1 em{font-style:normal;color:var(--alarm)}
 .lede{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:54ch;margin-top:22px}
@@ -263,6 +265,7 @@ footer ul{margin:10px 0 0;padding-left:1.1em;display:flex;flex-direction:column;
 <main>
 <header class="hero"><div class="wrap"><div class="hero-grid">
 <div>
+  <p class="byline"><span class="byline-l">Integrantes</span>Alejandro Gutiérrez Muñoz · Alejandro Silva Zuluaga<br>Kamma Dyhr · Daniel Restrepo Ospina</p>
   <div class="eyebrow"><span>Visión por computador</span><span class="src">Sentinel-2 · U-Net ResNet34 · 10 m por píxel</span></div>
   <h1>El modelo que veía <em>derrumbes</em> en los techos</h1>
   <p class="lede">Entrenamos una red con cicatrices de deslizamientos de Asia y la llevamos a Medellín, a Colombia y a América Latina. Funcionó con los derrumbes grandes y falló en las ciudades, porque confundía barrios enteros con cicatrices. Aquí está qué hicimos, qué problema encontramos y cómo lo corregimos con imágenes sintéticas.</p>
